@@ -40,7 +40,7 @@ def main():
 
     # Load the logging configuration 
     setup_logging(default_path=config["logging"]["config_path"])
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(config["title"])
 
     # Start the application
     logger.info("Application started.")
