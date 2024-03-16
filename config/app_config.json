@@ -1,4 +1,5 @@
 {
+    "title": "Flatmate Bill Calculator",
     "report": {
         "filename": "HouseBill_",
         "output_path": "./reports/"
