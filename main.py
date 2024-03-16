@@ -6,6 +6,7 @@ from views import feedback, messages
 from models.bill import Bill
 from models.flatmate import Flatmate
 from models.report import ReportGenerator
+from util.utility import ensure_directory_exists
 
 
 def load_config():
@@ -60,7 +61,8 @@ def main():
         days_in_house = int(feedback.input_with_prompt(f"Enter the number of days {name} stayed: "))
         flatmates.append(Flatmate(name, days_in_house))
 
-    report_filename = config["report"]["filename"]
+    report_filename = config["report"]["filename"] + f"{period.replace(' ', '_')}.pdf"
+    ensure_directory_exists(config["report"]["output_path"])
     report_pathname = config["report"]["output_path"] + report_filename
     report = ReportGenerator(report_pathname)
     report.generate_pdf(flatmates, bill)
