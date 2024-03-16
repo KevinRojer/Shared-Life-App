@@ -1,0 +1,5 @@
+welcome_message = "Welcome to the Flatmate Bill Calculator!"
+bill_period = "Enter the bill period (e.g., March 2024): "
+bill_amount = "Enter the total bill amount: "
+flatmate_name = "Enter flatmate's name: "
+exit_option = "To exit type: exit"
