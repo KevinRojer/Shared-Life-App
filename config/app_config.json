@@ -1,6 +1,6 @@
 {
     "report": {
-        "filename": "HouseBill_March2024.pdf",
+        "filename": "HouseBill_",
         "output_path": "./reports/"
     },
     "logging": {
